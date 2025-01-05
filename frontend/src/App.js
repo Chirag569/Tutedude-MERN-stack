@@ -14,6 +14,8 @@ import { LoginContext } from "./context/LoginContext";
 import Modal from "./components/Modal";
 import UserProfie from "./components/UserProfile";
 import MyFolliwngPost from "./components/MyFollowingPost";
+import UserSearch from "./components/UserSearch";
+import SearchPage from "./components/SearchPage";
 
 function App() {
   const [userLogin, setUserLogin] = useState(false);

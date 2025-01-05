@@ -11,6 +11,7 @@ export default function Navbar({ login }) {
     if (login || token) {
       return [
         <>
+          <Link to="/SearchPage">Search</Link>
           <Link to="/profile">
             <li>Profile</li>
           </Link>
