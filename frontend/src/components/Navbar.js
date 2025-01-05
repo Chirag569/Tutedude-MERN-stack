@@ -11,6 +11,7 @@ export default function Navbar({ login }) {
     if (login || token) {
       return [
         <>
+          <Link style={{ marginRight: "20px" }}to="/MutualFriendsPage">Mutual Friends</Link>
           <Link to="/SearchPage">Search</Link>
           <Link to="/profile">
             <li>Profile</li>
@@ -42,7 +43,7 @@ export default function Navbar({ login }) {
 
   return (
     <div className="navbar">
-      <img src={logo} alt="" />
+      <img src={logo} onClick={<Link to="/">Home</Link>} alt="" />
       <ul className="nav-menu">{loginStatus()}</ul>
     </div>
   );
